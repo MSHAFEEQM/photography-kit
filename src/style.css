@@ -945,8 +945,59 @@ body {
 
 /* Responsive Media Queries */
 @media (max-width: 921px) {
+  .hero-section {
+    padding: 35px 0 45px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .hero-text-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
+    line-height: 1.3;
+  }
+
+  .hero-subtitle-tag {
+    font-size: 1.05rem;
+  }
+
+  .hero-description {
+    text-align: left;
+    font-size: 0.95rem;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .hero-feature-tags {
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .hero-pricing-box {
+    width: 100%;
+    text-align: center;
+    padding: 22px 18px;
+  }
+
+  .price-row {
+    justify-content: center;
+  }
+
+  .hero-image-col {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
   }
   
   .grid-2, .grid-3 {
@@ -959,22 +1010,94 @@ body {
 }
 
 @media (max-width: 544px) {
+  .hero-section {
+    padding: 24px 0 32px;
+  }
+
+  .hero-grid {
+    gap: 24px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 5px 12px;
+    margin-bottom: 12px;
+  }
+
   .hero-title {
-    font-size: 1.8rem;
+    font-size: 1.65rem;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle-tag {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 14px;
+  }
+
+  .hero-description {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-left-width: 3px;
+  }
+
+  .hero-feature-tags {
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+
+  .feature-tag {
+    font-size: 0.78rem;
+    padding: 5px 10px;
+  }
+
+  .hero-pricing-box {
+    padding: 18px 14px;
+    border-radius: 14px;
+  }
+
+  .price-row {
+    font-size: 0.95rem;
+    gap: 12px;
+    margin-bottom: 6px;
   }
 
   .price-main {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
   }
 
   .highlight-price {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   }
 
-  .btn {
+  .risk-free {
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
+  .cta-wrapper {
+    margin-top: 15px;
     width: 100%;
-    padding: 14px 20px;
-    font-size: 1rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 14px 14px;
+    font-size: 0.98rem;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 1.3;
+    white-space: normal;
+  }
+
+  .cart-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
   }
 
   .time-block {
